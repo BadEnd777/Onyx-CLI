@@ -1,5 +1,11 @@
 # Onyx CLI
 
+<div align="center">
+
+[![Automated Testing 🚀](https://github.com/BadEnd777/Onyx-CLI/actions/workflows/test.yml/badge.svg)](https://github.com/BadEnd777/Onyx-CLI/actions/workflows/test.yml)
+
+</div>
+
 Onyx CLI is a command-line interface tool that allows you to interact with various functions. It provides a simple and intuitive way to perform different tasks through a command-line interface.
 
 ## Development
