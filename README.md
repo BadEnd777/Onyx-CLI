@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Automated Testing 🚀](https://github.com/BadEnd777/Onyx-CLI/actions/workflows/test.yml/badge.svg)](https://github.com/BadEnd777/Onyx-CLI/actions/workflows/test.yml)
+[![Automated Testing 🚀](https://github.com/BadEnd777/Onyx-CLI/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/BadEnd777/Onyx-CLI/actions/workflows/test.yml)
 
 </div>
 
