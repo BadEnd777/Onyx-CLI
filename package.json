@@ -1,0 +1,54 @@
+{
+  "name": "onyx-cli",
+  "version": "0.0.1",
+  "description": "Onyx CLI is a command-line interface tool that allows you to interact with various functions. It provides a simple and intuitive way to perform different tasks through a command-line interface.",
+  "main": "src/index.ts",
+  "author": "BadEnd",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BadEnd777/Onyx-CLI.git"
+  },
+  "bin": {
+    "onyx": "./build/main.js"
+  },
+  "_moduleAliases": {
+    "@": "build"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/rimraf ./build && ./node_modules/.bin/tsc --skipLibCheck",
+    "compile": "pkg . --out-path dist",
+    "start": "npm run build && node ./build/main.js",
+    "lint": "eslint --ext .ts src",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
+    "colors": "^1.4.0",
+    "module-alias": "^2.2.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4",
+    "ytdl-core": "latest"
+  },
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.17.0",
+    "pkg": "^5.8.1",
+    "prettier": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
